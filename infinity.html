@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section
+{
+display: flex;
+justify-content: centre;
+align-items: center;
+min-height: 100vh;
+background: #042104;
+}
+section .container
+{
+    display: flex;
+}
+section .container .cercle
+{
+    position: relative;
+    width: 150px;
+    height:150px ;
+}
+section .container .cercle span
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotate(calc(18deg * var(--i)));
+/* 360/ 20 = 18deg */
+
+}
+section .container .cercle span::before
+{
+content: '';
+position: absolute;
+right: 0;
+top: calc(50% - 7.5PX);
+width: 15px;
+height: 15px;
+background: #00ff0a;
+border-radius: 50%;
+box-shadow: 0 0 10px #00ff0a;
+0 0 10px #00ff0a;
+0 0 10px #00ff0a;
+0 0 10px #00ff0a;
+0 0 10px #00ff0a;
+0 0 10px #00ff0a;
+transform: scale (0.1)
+}
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="circle">
+                <span style="--i:0"></span>
+                <span style="--i:1"></span>
+                <span style="--i:2"></span>
+                <span style="--i:3"></span>
+                <span style="--i:4"></span>
+                <span style="--i:5"></span>
+                <span style="--i:6"></span>
+                <span style="--i:7"></span>
+                <span style="--i:8"></span>
+                <span style="--i:9"></span>
+                <span style="--i:10"></span>
+                <span style="--i:11"></span>
+                <span style="--i:12"></span>
+                <span style="--i:13"></span>
+                <span style="--i:14"></span>
+                <span style="--i:15"></span>
+                <span style="--i:16"></span>
+                <span style="--i:17"></span>
+                <span style="--i:18"></span>
+                <span style="--i:19"></span>
+                <span style="--i:20"></span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
